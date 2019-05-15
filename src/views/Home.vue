@@ -1,18 +1,45 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div className="page-landing">
+      <Header btnName="Log In" redirectTo="LOGIN" />
+      <Section />
+      <Footer />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
+import Header from '../components/Header';
 export default {
   name: "home",
   components: {
-    HelloWorld
+    Header
   }
 };
 </script>
+
+<style>
+.padding-top-30{
+    padding-top: 30px;
+}
+
+.page-landing #intro {
+    margin-top: 4%;
+    color: whitesmoke;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(https://cdn-images-1.medium.com/max/4000/0*ngXgBNNdx6iiWP8q.png);
+    background-position: center;
+}
+
+.page-landing #about {
+    padding: 60px;
+}
+
+.page-landing #offers {
+    padding: 60px;
+    background-color: #439fe0;
+}
+
+.page-landing #join {
+    padding: 100px 0 10px;
+}
+</style>
+

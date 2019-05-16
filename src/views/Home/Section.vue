@@ -3,7 +3,7 @@
     <section id="intro" class="mainPage_topBar">
       <h1>Mock interview with engineers</h1>
       <p>We provide the same experience as real interviews and you'll get real feedback in the end.</p>
-      <Router-Link to="{SINGUP}">
+      <Router-Link to="/signup">
         <button class="navigation-auth_signup-button">Sign Up</button>
       </Router-Link>
     </section>
@@ -72,10 +72,19 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faUsers } from "@fortawesome/free-solid-svg-icons";
 import { faDesktop } from "@fortawesome/free-solid-svg-icons";
+import { SIGNUP } from "@/constants";
+
 library.add(faHeart);
 library.add(faUsers);
 library.add(faDesktop);
-export default {};
+
+export default {
+  data() {
+    return {
+      testing: SIGNUP
+    }
+  }
+};
 </script>
 
 <style>

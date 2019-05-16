@@ -21,35 +21,6 @@ export default {
 </script>
 
 <style>
-.App {
-  text-align: center;
-}
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-.App-link {
-  color: #61dafb;
-}
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 #navigation {
   position: fixed;
   top: 0;
@@ -60,39 +31,23 @@ export default {
   background-color: #252e38;
   box-shadow: 0 0 25px 0 #131c25;
 }
-#navigation .navigation-nav-container {
-  float: right;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  padding: 0 20px;
-}
-#navigation .navigation-nav-container {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  padding: 0 20px;
-}
 .navigation-logo {
-  margin: 10px 10px;
   height: 100%;
   align-items: center;
   transition: opacity, 0.2s;
   height: 18px;
-  width: 142px;
   padding-top: 30px;
+  padding-left: 10px;
   font-size: 250%;
   color: white;
   font-display: bold;
   font-family: fantasy;
+  display: flex;
 }
 .navigation-auth {
   display: flex;
-  margin: 6px 15px;
-  flex-basis: 310px;
+  margin: -14px 15px;
   float: right;
-  padding: 4px;
   width:170px
 }
 .navigation-auth .navigation-auth-login-button {
